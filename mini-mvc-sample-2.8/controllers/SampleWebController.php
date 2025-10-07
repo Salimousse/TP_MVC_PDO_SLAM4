@@ -16,4 +16,9 @@ class SampleWebController extends WebController
     {
         return "Voilà votre paramètre : $parametre";
     }
+
+    function liste (): string
+    {
+        return Template::render("views/liste/liste.php");
+    }
 }
